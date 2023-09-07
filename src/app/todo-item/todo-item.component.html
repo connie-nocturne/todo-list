@@ -1,0 +1,6 @@
+<!-- todo-item.component.html -->
+<input type="checkbox" [(ngModel)]="todo.completed"/>
+<span [ngClass]="{'completed': todo.completed}"> {{ todo.text }} </span>
+<button class="btn btn-danger btn-sm float-right" (click)="removeTodo()">
+    <i class="fas fa-trash"></i>
+</button>
